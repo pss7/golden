@@ -272,21 +272,21 @@ input{width: 100%; padding:0 20px 0 48px; height: 55px; background-color: #fff; 
 input::placeholder{color: #738192;}
 textarea{width: 100%; padding:16px 20px 20px 48px; height: 127px; background-color: #fff; border: 1px solid #e8e8e8; font-size: 14px; color: #738192;}
 textarea::placeholder{color: #738192;}
-input#name{background: #fff url(../images/icon01.png)no-repeat 18px center / contain;}
-input#phone{background: #fff url(../images/icon02.png)no-repeat 18px center / contain;}
-input#email{background: #fff url(../images/icon03.png)no-repeat 18px center / contain;}
-input#model{background: #fff url(../images/icon04.png)no-repeat 18px center / contain;}
-textarea#content{background: #fff url(../images/icon05.png)no-repeat 18px 19px;}
+input#name{background: #fff url(../images/icon01.png)no-repeat 18px center / contain; background-size: 14px 18px;}
+input#phone{background: #fff url(../images/icon02.png)no-repeat 18px center / contain; background-size: 19px 20px;}
+input#email{background: #fff url(../images/icon03.png)no-repeat 18px center / contain; background-size: 20px 16px;}
+input#model{background: #fff url(../images/icon04.png)no-repeat 18px center / contain; background-size: 20px 12px;}
+textarea#content{background: #fff url(../images/icon05.png)no-repeat 18px 18px  /contain; background-size: 18px 19px;}
 
 @media (max-width: 1200px){
 
   input{width: 100%; padding:0 1.67vw 0 4.00vw; height: 4.58vw;  border: 0.08vw solid #e8e8e8; font-size: 1.17vw; }
   textarea{width: 100%; padding:1.33vw 1.67vw 1.67vw 4.00vw; height: 10.58vw;  border: 0.08vw solid #e8e8e8; font-size: 1.17vw; }
-  input#name{background: #fff url(../images/icon01.png)no-repeat 1.50vw center / contain;}
-  input#phone{background: #fff url(../images/icon02.png)no-repeat 1.50vw center / contain;}
-  input#email{background: #fff url(../images/icon03.png)no-repeat 1.50vw center / contain;}
-  input#model{background: #fff url(../images/icon04.png)no-repeat 1.50vw center / contain;}
-  textarea#content{background: #fff url(../images/icon05.png)no-repeat 1.50vw 1.58vw;}
+  input#name{background: #fff url(../images/icon01.png)no-repeat 1.50vw center / contain; background-size: 1.17vw 1.50vw;}
+  input#phone{background: #fff url(../images/icon02.png)no-repeat 1.50vw center / contain; background-size: 1.58vw 1.67vw;}
+  input#email{background: #fff url(../images/icon03.png)no-repeat 1.50vw center / contain; background-size: 1.67vw 1.33vw;}
+  input#model{background: #fff url(../images/icon04.png)no-repeat 1.50vw center / contain; background-size: 1.67vw 1.00vw;}
+  textarea#content{background: #fff url(../images/icon05.png)no-repeat 1.50vw 1.50vw  /contain; background-size: 1.50vw 1.58vw;}
 
 }
 
