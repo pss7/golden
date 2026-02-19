@@ -18,7 +18,7 @@ img{display:block; max-width:100%; height:auto;}
 
   .titleBox .title{ margin-bottom: 0.58vw; padding: 0.83vw; font-size: 2.50vw;  border: 0.08vw solid #fff; border-width: 0.08vw 0;}
   .titleBox .text01{font-size: 5.00vw;  }
-  .titleBox .text02{font-size: 1.67vw;   line-height: 1.3;}
+  .titleBox .text02{font-size: 1.67vw;   line-height: 1.3; word-break: keep-all;}
   .titBox .tit{padding: 0 1.67vw;   align-items: flex-end;  gap: 0 0.83vw; padding-bottom: 1.67vw; margin-bottom:4.17vw; font-size: 2.00vw; letter-spacing: -0.17vw;}
   .titBox .tit::before{ height: 1.33vw;  left:0; bottom: 0.33vw; right:0; background: url(../images/line.png) no-repeat bottom center;}
   .titBox .tit span{ margin-top: -0.42vw; padding: 0 0.83vw; font-size: 4.59vw;  line-height: 1;  }
@@ -28,12 +28,20 @@ img{display:block; max-width:100%; height:auto;}
 
 @media (max-width: 767px){
 
-  .titleBox .title{font-size: 4.5vw;}
-  .titleBox .text01{font-size: 7vw;}
-  .titleBox .text02{font-size: 2.5vw;}
+  .titleBox .title{font-size: 4.5vw!important;}
+  .titleBox .text01{font-size: 7vw!important;}
+  .titleBox .text02{font-size: 4.5vw!important;}
 
   .titBox .tit{font-size: 3.2vw;}
   .titBox .tit span{font-size: 6vw;}
+
+}
+
+@media (max-width: 480px){
+
+  .titleBox .text02{font-size: 3.5vw!important;}
+  .titBox .tit{font-size: 3.5vw;}
+  .titBox .tit span{font-size: 7vw;}
 
 }
 
@@ -41,7 +49,14 @@ img{display:block; max-width:100%; height:auto;}
 .container{max-width: 1000px; margin: 0 auto;}
 
 /* 영역1 */
+#section01 img.m{display: none;}
 
+@media (max-width: 767px){
+
+  #section01 img.pc{display: none;}
+  #section01 img.m{display: block;}
+
+}
 
 /* 영역2 */
 #section02{position: relative; padding: 145px 0 0;  height: 1261px; background: url(../images/bg03.jpg)no-repeat center / cover;}
@@ -133,13 +148,23 @@ img{display:block; max-width:100%; height:auto;}
 @media (max-width: 767px){
 
   #section03{height: 156vw;}
-  #section03 .topBox .titleBox .text02{font-size: 2vw;}
+  #section03 .topBox .titleBox .text02{font-size: 3vw!important;}
   #section03 .topBox .titleBox .title{font-size: 3vw;}
   #section03 .topBox .titleBox .text01{font-size: 5vw;}
   #section03 .topBox{height: 70vw;}
   #section03 .listBox .list li .textBox h3{font-size: 2.5vw;}
   #section03 .listBox .list li .textBox p{font-size: 2vw;}
   #section03 .listBox .list li .textBox p br{display: none;}
+
+}
+
+@media (max-width: 480px){
+
+  #section03{height: auto;}
+  #section03 .listBox .list li .iconBox{width: 15vw; height: 15vw;}
+  #section03 .listBox .list li{flex-direction: column; gap: 3vw 0; margin-bottom: 10vw;}
+  #section03 .listBox .list li .textBox h3{font-size: 4vw; text-align: center;}
+  #section03 .listBox .list li .textBox p{font-size: 2.8vw;}
 
 }
 
@@ -191,9 +216,15 @@ img{display:block; max-width:100%; height:auto;}
 
 @media (max-width: 767px){
 
-  #section05 .listBox .box .text01{font-size:  2.5vw;}
   #section05 .listBox .box .text01 br{display: none;}
-  #section05 .listBox .box .text02{font-size: 3vw;}
+  #section05 .listBox .box .text01{font-size: 3.5vw;}
+  #section05 .listBox .box .text02{font-size: 3.5vw;}
+
+}
+
+@media (max-width: 480px){
+
+  #section05 .listBox .box .text02 br{display: none; word-break: keep-all;}
 
 }
 
@@ -247,6 +278,12 @@ img{display:block; max-width:100%; height:auto;}
 
 }
 
+@media (max-width: 480px){
+
+
+
+}
+
 /* 영역9 */
 #section09{padding: 90px 0; background-color: #fff;}
 #section09 .titleBox{margin-bottom: 35px;}
@@ -281,6 +318,13 @@ img{display:block; max-width:100%; height:auto;}
 
   #section09 .introduceBox .text02{font-size: 3vw;}
   #section09 .introduceBox .text03{font-size: 2.5vw;}
+
+}
+
+@media (max-width: 480px){
+
+  #section09 .introduceBox .text02{font-size: 4vw;}
+  #section09 .introduceBox .text03{font-size: 2.8vw;}
 
 }
 
@@ -348,6 +392,19 @@ border: 1px solid #747273;}
 
 }
 
+@media (max-width: 480px){
+
+  #section10 .textBox h3{font-size: 5vw;}
+  #section10 .textBox p{font-size: 3.5vw;}
+  #section10 .infoBox{width: 48.73vw;}
+  #section10 .phoneBox span{font-size: 4vw;}
+  #section10 .phoneBox em{font-size: 7vw;}
+  #section10 .infoBox dl dt, #section10 .infoBox dl dd{font-size: 3.5vw;}
+  #section10 .infoBox dl dt{width: 20vw;}
+  #section10 .counselBtn{height: 8.5vw; font-size: 3.5vw;}
+
+}
+
 /* 폼 */
 input{width: 100%; padding:0 20px 0 48px; height: 55px; background-color: #fff; border: 1px solid #e8e8e8; font-size: 14px; color: #738192;}
 input::placeholder{color: #738192;}
@@ -382,6 +439,18 @@ textarea#content{background: #fff url(../images/icon05.png)no-repeat 18px 18px  
 
 }
 
+@media (max-width: 480px){
+
+  input#name,
+  input#phone,
+  input#email,
+  input#model,
+  textarea#content{padding-left: 2vw; background: #fff;}
+  input,
+  textarea{font-size: 2.6vw;}
+
+}
+
 /* 푸터 */
 #footerWrap{padding: 26px 0; background-color: #000;}
 #footerWrap p{font-size: 12px; font-weight: 300; color: #bebebe; line-height: 1.4;}
@@ -392,5 +461,12 @@ textarea#content{background: #fff url(../images/icon05.png)no-repeat 18px 18px  
   #footerWrap{padding: 2.17vw 0; }
   #footerWrap .footerBox{padding: 0 1.67vw;}
   #footerWrap p{font-size: 1.6vw; line-height: 1.4;}
+
+}
+
+@media (max-width: 767px){
+
+
+  #footerWrap p{font-size: 2.5vw;}
 
 }
